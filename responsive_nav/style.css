@@ -1,0 +1,65 @@
+body, html {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	font-size: 14px;
+}
+
+header {
+	padding: 20px;
+	background-color: #0079c1;
+}
+
+a#menu_icon {
+	display: none;
+}
+
+ul#navigation_list {
+    margin: 10px 0 0 0;
+}
+
+ul#navigation_list li {
+	list-style: none;
+	display: inline-block;
+	margin: 0 10px;
+	vertical-align: middle;
+}
+
+a.navigation_link {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1em;
+	color: #ffffff;
+}
+
+a.navigation_link:hover {
+	text-decoration: none;
+	opacity: 0.8;
+}
+
+.show_menu {
+	display: block !important;
+}
+
+
+/* Small Device Size Media Queries*/ 
+@media only screen and (device-width: 768px), only screen and (max-width: 768px) {
+	a#menu_icon {
+		display: block;
+		margin: -30px 0 0 0;
+	}
+	a#menu_icon img {
+		width: 40px;
+	}
+	ul#navigation_list {
+		display: none;
+	    padding: 0;
+    	float: none !important;
+    	margin: 30px 0 0 0;
+	}
+	ul#navigation_list li {
+		list-style: none;
+		display: block;
+		border-top: 1px solid #cccccc;
+		padding: 20px 0; 
+	}
+}
